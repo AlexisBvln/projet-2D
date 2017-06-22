@@ -30,8 +30,11 @@ public static class Constantes : object {
 	public const string NAME_SCRIPT_GAME = "Game";
 	public const string BALL_TAG = "Ball";
 
-	// Titre du level dans le GUI GAGNE
-	public const string NAME_TITRE_GUI_WIN = "titreGuiWin";
+    // Basket (script Game)
+    public const string NAME_Basket = "basket";
+
+    // Titre du level dans le GUI GAGNE
+    public const string NAME_TITRE_GUI_WIN = "titreGuiWin";
 	public const string NAME_TITRE_GUI_LEVEL = "titreGuiLevel";
 	public const string TEXT_TITRE_GUI_WIN = "Gagné !";
 	public const string TEXT_TITRE_GUI_LOOSE = "Perdu !";

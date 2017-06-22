@@ -9,11 +9,13 @@ public class GestionLevel : MonoBehaviour
 
     public GameObject piecePrefab;
     public GameObject poubellePrefab;
+    public GameObject basketPrefab;
     public GameObject grueOnPrefab;
     public GameObject grue2OnPrefab;
     public GameObject grueOffPrefab;
     public GameObject ballPrefab;
     public GameObject canonPrefab;
+
     public static GameObject panel;
 
     public int levelTestActive;
@@ -227,11 +229,33 @@ public class GestionLevel : MonoBehaviour
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)-70, (float)-193, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)143, (float)-191, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)318, (float)30, 0), Quaternion.identity);
-                Instantiate(canonPrefab.transform, new Vector3((float)-500, (float)-236.6, 0), Quaternion.identity);
+                Instantiate(canonPrefab.transform, new Vector3((float)-500, (float)-237, 0), Quaternion.identity);
                 Instantiate(poubellePrefab.transform, new Vector3((float)-6, (float)-237, 0), Quaternion.identity);
                 Global.canonAngleMin = -10;
                 Global.canonAngleMax = 90;
                 break;
+            //Niveau Thomas 3:
+            case 10:
+                Instantiate(piecePrefab.transform, new Vector3((float)-135, (float)141, 0), Quaternion.identity);
+                Instantiate(piecePrefab.transform, new Vector3((float)141, (float)-81, 0), Quaternion.identity);
+                Instantiate(piecePrefab.transform, new Vector3((float)250, (float)-3, 0), Quaternion.identity);
+                Instantiate(grue2OnPrefab.transform, new Vector3((float)-270, (float)-190, 0), Quaternion.Euler(new Vector3(0, 0, -11)));
+                Instantiate(grue2OnPrefab.transform, new Vector3((float)-234, (float)-56, 0), Quaternion.Euler(new Vector3(0, 0, -11)));
+                Instantiate(grue2OnPrefab.transform, new Vector3((float)-147, (float)32, 0), Quaternion.Euler(new Vector3(0, 0, 86)));
+                Instantiate(grue2OnPrefab.transform, new Vector3((float)-83, (float)-62, 0), Quaternion.identity);
+                Instantiate(grue2OnPrefab.transform, new Vector3((float)-70, (float)-193, 0), Quaternion.identity);
+                Instantiate(grue2OnPrefab.transform, new Vector3((float)143, (float)-191, 0), Quaternion.identity);
+                Instantiate(grue2OnPrefab.transform, new Vector3((float)318, (float)-191, 0), Quaternion.identity);
+                Instantiate(grue2OnPrefab.transform, new Vector3((float)318, (float)-55, 0), Quaternion.identity);
+                Instantiate(canonPrefab.transform, new Vector3((float)-500, (float)-237, 0), Quaternion.identity);
+                // impossible d'afficher à l'écran mon objet "basket"!! 
+                //  Instantiate(basketPrefab.transform, new Vector3((float)255, (float)-60, 0), Quaternion.identity);
+                // je laisse pour le moment la corbeille - TODO : basket à la place de corbeille
+                Instantiate(poubellePrefab.transform, new Vector3((float)255, (float)-60, 0), Quaternion.identity);
+                Global.canonAngleMin = -10;
+                Global.canonAngleMax = 90;
+                break;
+
             default:
                 break;
         }
