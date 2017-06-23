@@ -4,108 +4,31 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GestionLevel : MonoBehaviour {
 
-	public GameObject piecePrefab;
-	public GameObject poubellePrefab;
-	public GameObject grueOnPrefab;
-	public GameObject grue2OnPrefab;
-	public GameObject grueOffPrefab;
-	public GameObject ballPrefab;
-	public GameObject canonPrefab;
-	public static GameObject panel;
 
-	public int levelTestActive;
 
-	/******************************************************************************
 	 * START
 	 *****************************************************************************/
-	void Awake () {
 
-		Global.point = 0;
-		Global.isWin = false;
 
-		// Cache le panel au démarage
-		panel = GameObject.Find (Constantes.NAME_PANEL);
-		if (panel!= null)
-			panel.SetActive(false);
 
-		// Affiche les Objets du niveau
-		chargeLevel();
+        // Affiche les Objets du niveau
+        chargeLevel();
 
-		Global.waitForShoot = true;
-	}
 
-	/******************************************************************************
 	 * UPDATE
 	 *****************************************************************************/
-	void Update () {
-		// Quand on clique sur ECHAP, on revient à l'écran des levels
-		if (Input.GetKey (Constantes.key_echap)) {
-			Global.menuPage = Constantes.NAME_ECRAN_LEVELS;
-			SceneManager.LoadScene (Constantes.NAME_SCENE_MENU);
-		}
 
-		// Si on appui sur barre d'espace, on relance le jeu
-		if (Input.GetKey (Constantes.key_espace)) {
-			restartLevel ();
-		}
-	}
 
-	/******************************************************************************
 	 * AUTRES FONCTIONS
 	 *****************************************************************************/
-	// Quand on clique sur le bouton "NEXT"
-	public void nextLevel(){
-		Global.levelActive ++;
-		SceneManager.LoadScene (Constantes.NAME_SCENE_LEVEL);
-	}
-	
-	// Quand on clique sur le bouton restart level
-	public void RelanceJeu(){
-		if (SceneManager.GetActiveScene().name.Equals (Constantes.NAME_SCENE_LEVELTEST)) {
-			SceneManager.LoadScene (Constantes.NAME_SCENE_LEVELTEST);
-		} else {
-			SceneManager.LoadScene (Constantes.NAME_SCENE_LEVEL);
-		}
-	}
-	
-	// Quand on clique sur le bouton pour revenir sur la sélection de level
-	public void afficheLevels(){
-		Global.menuPage = Constantes.NAME_ECRAN_LEVELS;
-		SceneManager.LoadScene (Constantes.NAME_SCENE_MENU);
-	}
 
-	public static void SaveLevel(int numLevel, int score){
-		// Si le score est meilleur que celui en sauvegarde, on enregistre
-		if (score > Global.listeScore [numLevel]) {
-			Global.listeScore[numLevel] = score;
-			PlayerPrefs.SetInt (numLevel.ToString (), score);
-		}
-		affichePanelScore ();
-	}
 
-	public void restartLevel (){
-		if (!Global.isWin){
-			if (SceneManager.GetActiveScene().name.Equals(Constantes.NAME_SCENE_LEVELTEST)){
-				if (levelTestActive != 0){
-					Global.levelActive = levelTestActive;
-				}
-				SceneManager.LoadScene (Constantes.NAME_SCENE_LEVELTEST);
-			}
-			else{
-				SceneManager.LoadScene (Constantes.NAME_SCENE_LEVEL);
-			}
-		}
-	}
 
-	public static void affichePanelScore(){
-		panel.SetActive(true);
-	}
 
-	/******************************************************************************
 	 * COORDONNEES LEVEL
 	 *****************************************************************************/
+<<<<<<< HEAD
 	void chargeLevel(){
 		switch (Global.levelActive) {
 		case 1:
@@ -197,5 +120,7 @@ public class GestionLevel : MonoBehaviour {
 			break;
 		}
 	}
+=======
+>>>>>>> 6dc7d2ed54b0cbbd401807f0513c6f0f19c26416
 
 }
