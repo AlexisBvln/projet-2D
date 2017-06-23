@@ -181,7 +181,19 @@ public class GestionLevel : MonoBehaviour {
 			Global.canonAngleMin = -10;
 			Global.canonAngleMax = 90;
 			break;
-		default:
+        case 8:
+            Instantiate(piecePrefab.transform, new Vector3((float)500, (float)24, 0), Quaternion.identity);
+            Instantiate(piecePrefab.transform, new Vector3((float)60, (float)-193, 0), Quaternion.identity);
+            Instantiate(piecePrefab.transform, new Vector3((float)243, (float)-81, 0), Quaternion.identity);
+            Instantiate(grueOnPrefab.transform, new Vector3((float)-227, (float)-119, 0), Quaternion.identity);
+            Instantiate(grue2OnPrefab.transform, new Vector3((float)-132.7, (float)-5.5, 0), Quaternion.Euler(new Vector3(0, 0, 90)));
+            Instantiate(grue2OnPrefab.transform, new Vector3((float)174, (float)-188, 0), Quaternion.identity);
+            Instantiate(canonPrefab.transform, new Vector3((float)-500, (float)-236.6, 0), Quaternion.identity);
+            Instantiate(poubellePrefab.transform, new Vector3((float)271, (float)-237, 0), Quaternion.identity);
+            Global.canonAngleMin = -10;
+            Global.canonAngleMax = 90;
+            break;
+        default:
 			break;
 		}
 	}
