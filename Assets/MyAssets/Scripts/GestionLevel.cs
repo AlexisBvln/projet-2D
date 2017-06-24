@@ -209,7 +209,7 @@ public class GestionLevel : MonoBehaviour
             case 8:
                 Instantiate(piecePrefab.transform, new Vector3((float)-135, (float)141, 0), Quaternion.identity);
                 Instantiate(piecePrefab.transform, new Vector3((float)141, (float)-81, 0), Quaternion.identity);
-                Instantiate(piecePrefab.transform, new Vector3((float)0, (float)-174, 0), Quaternion.identity);
+                Instantiate(piecePrefab.transform, new Vector3((float)0, (float)-150, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)-270, (float)-190, 0), Quaternion.Euler(new Vector3(0, 0, -11)));
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)-234, (float)-56, 0), Quaternion.Euler(new Vector3(0, 0, -11)));
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)-147, (float)32, 0), Quaternion.Euler(new Vector3(0, 0, 86)));
@@ -219,12 +219,12 @@ public class GestionLevel : MonoBehaviour
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)318, (float)30, 0), Quaternion.identity);
 
                 Instantiate(canonPrefab.transform, new Vector3((float)-500, (float)-237, 0), Quaternion.identity);
-                Instantiate(poubellePrefab.transform, new Vector3((float)-6, (float)-237, 0), Quaternion.identity);
+                Instantiate(poubellePrefab.transform, new Vector3((float)-6, (float)-205, 0), Quaternion.identity);
                 Global.canonAngleMin = -10;
                 Global.canonAngleMax = 90;
                 break;
             //Niveau Thomas 3:
-            case 10:
+            case 09:
                 Instantiate(piecePrefab.transform, new Vector3((float)-135, (float)141, 0), Quaternion.identity);
                 Instantiate(piecePrefab.transform, new Vector3((float)141, (float)-81, 0), Quaternion.identity);
                 Instantiate(piecePrefab.transform, new Vector3((float)250, (float)-3, 0), Quaternion.identity);
@@ -236,22 +236,15 @@ public class GestionLevel : MonoBehaviour
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)143, (float)-191, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)318, (float)-191, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)318, (float)-55, 0), Quaternion.identity);
-              // Instantiate(canonPrefab.transform, new Vector3((float)-500, (float)-237, 0), Quaternion.identity);
                 // impossible d'afficher à l'écran mon objet "basket"!! 
                 //  Instantiate(basketPrefab.transform, new Vector3((float)255, (float)-60, 0), Quaternion.identity);
                 // je laisse pour le moment la corbeille - TODO : basket à la place de corbeille
-                //Instantiate(poubellePrefab.transform, new Vector3((float)255, (float)-60, 0), Quaternion.identity);
                 Global.canonAngleMin = -10;
                 Global.canonAngleMax = 90;
                 Instantiate(canonPrefab.transform, new Vector3((float)-460, (float)-238, 0), Quaternion.identity);
                Instantiate(poubellePrefab.transform, new Vector3((float)-6, (float)-205, 0), Quaternion.identity);
-             
                 break;
-
-            
-              
-            //Niveau Thomas 2:
-//>>>>>>> ced37dd17d83ceab3c2c2cf01fadf9a221796f0d
+                
             default:
                 break;
         }
