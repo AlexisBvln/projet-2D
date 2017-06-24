@@ -1,4 +1,5 @@
 5.6.1f1:3.1.0.0
+<<<<<<< HEAD
 StandaloneWindows64
 E:/Dev/Editor/Data/Managed/UnityEngine.dll
 E:/Dev/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
@@ -9,3 +10,15 @@ E:/Dev/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dl
 E:/Dev/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll
 E:/Dev/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll
 E:/Dev/Editor/Data/Managed/UnityEditor.dll
+=======
+StandaloneWindows
+D:/Unity5/Editor/Data/Managed/UnityEngine.dll
+D:/Unity5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
+D:/Unity5/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
+D:/Unity5/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll
+D:/Unity5/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll
+D:/Unity5/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll
+D:/Unity5/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll
+D:/Unity5/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll
+D:/Unity5/Editor/Data/Managed/UnityEditor.dll
+>>>>>>> ced37dd17d83ceab3c2c2cf01fadf9a221796f0d

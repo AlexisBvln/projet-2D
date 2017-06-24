@@ -127,6 +127,7 @@ public class GestionLevel : MonoBehaviour
     /******************************************************************************
 	 * COORDONNEES LEVEL
 	 *****************************************************************************/
+
     void chargeLevel()
     {
         switch (Global.levelActive)
@@ -135,7 +136,7 @@ public class GestionLevel : MonoBehaviour
                 Instantiate(piecePrefab.transform, new Vector3((float)-270, (float)-157, 0), Quaternion.identity);
                 Instantiate(piecePrefab.transform, new Vector3((float)-1, (float)-141, 0), Quaternion.identity);
                 Instantiate(piecePrefab.transform, new Vector3((float)293, (float)-203, 0), Quaternion.identity);
-                Instantiate(poubellePrefab.transform, new Vector3((float)400, (float)-240.6, 0), Quaternion.Euler(new Vector3(0, 0, 80)));
+                Instantiate(poubellePrefab.transform, new Vector3((float)400, (float)-213, 0), Quaternion.Euler(new Vector3(0, 0, 80)));
                 Instantiate(canonPrefab.transform, new Vector3((float)-500, (float)-238, 0), Quaternion.identity);
                 Global.canonAngleMin = -10;
                 Global.canonAngleMax = 90;
@@ -144,7 +145,7 @@ public class GestionLevel : MonoBehaviour
                 Instantiate(piecePrefab.transform, new Vector3((float)-270, (float)95, 0), Quaternion.identity);
                 Instantiate(piecePrefab.transform, new Vector3((float)-1, (float)200, 0), Quaternion.identity);
                 Instantiate(piecePrefab.transform, new Vector3((float)293, (float)-23, 0), Quaternion.identity);
-                Instantiate(poubellePrefab.transform, new Vector3((float)400, (float)-236.6, 0), Quaternion.identity);
+                Instantiate(poubellePrefab.transform, new Vector3((float)400, (float)-205, 0), Quaternion.identity);
                 Instantiate(canonPrefab.transform, new Vector3((float)-500, (float)-238, 0), Quaternion.identity);
                 Global.canonAngleMin = -10;
                 Global.canonAngleMax = 90;
@@ -153,7 +154,7 @@ public class GestionLevel : MonoBehaviour
                 Instantiate(piecePrefab.transform, new Vector3((float)-189, (float)47, 0), Quaternion.identity);
                 Instantiate(piecePrefab.transform, new Vector3((float)94, (float)-212, 0), Quaternion.identity);
                 Instantiate(piecePrefab.transform, new Vector3((float)314, (float)-114, 0), Quaternion.identity);
-                Instantiate(poubellePrefab.transform, new Vector3((float)400, (float)-236.6, 0), Quaternion.identity);
+                Instantiate(poubellePrefab.transform, new Vector3((float)400, (float)-205, 0), Quaternion.identity);
                 Instantiate(canonPrefab.transform, new Vector3((float)-460, (float)-238, 0), Quaternion.identity);
                 Global.canonAngleMin = -10;
                 Global.canonAngleMax = 90;
@@ -165,7 +166,7 @@ public class GestionLevel : MonoBehaviour
                 Instantiate(grueOnPrefab.transform, new Vector3((float)-101, (float)-120.4, 0), Quaternion.identity);
                 Instantiate(grueOnPrefab.transform, new Vector3((float)12.9, (float)41.3, 0), Quaternion.Euler(new Vector3(0, 0, 90)));
                 Instantiate(grueOnPrefab.transform, new Vector3((float)126.9, (float)-120.4, 0), Quaternion.identity);
-                Instantiate(poubellePrefab.transform, new Vector3((float)400, (float)-236.6, 0), Quaternion.identity);
+                Instantiate(poubellePrefab.transform, new Vector3((float)400, (float)-205, 0), Quaternion.identity);
                 Instantiate(canonPrefab.transform, new Vector3((float)-500, (float)-238, 0), Quaternion.identity);
                 Global.canonAngleMin = -10;
                 Global.canonAngleMax = 90;
@@ -176,7 +177,7 @@ public class GestionLevel : MonoBehaviour
                 Instantiate(piecePrefab.transform, new Vector3((float)40, (float)-135, 0), Quaternion.identity);
                 Instantiate(grueOnPrefab.transform, new Vector3((float)431, (float)-69, 0), Quaternion.Euler(new Vector3(0, 0, -53)));
                 Instantiate(canonPrefab.transform, new Vector3((float)-460, (float)-238, 0), Quaternion.identity);
-                Instantiate(poubellePrefab.transform, new Vector3((float)20, (float)-236.5, 0), Quaternion.identity);
+                Instantiate(poubellePrefab.transform, new Vector3((float)20, (float)-205, 0), Quaternion.identity);
                 Global.canonAngleMin = -10;
                 Global.canonAngleMax = 90;
                 break;
@@ -188,7 +189,7 @@ public class GestionLevel : MonoBehaviour
                 Instantiate(grueOnPrefab.transform, new Vector3((float)13, (float)-100, 0), Quaternion.Euler(new Vector3(0, 0, 90)));
                 Instantiate(grueOnPrefab.transform, new Vector3((float)126.9, (float)-120.4, 0), Quaternion.identity); ;
                 Instantiate(canonPrefab.transform, new Vector3((float)-460, (float)-238, 0), Quaternion.identity);
-                Instantiate(poubellePrefab.transform, new Vector3((float)271, (float)-236.5, 0), Quaternion.identity);
+                Instantiate(poubellePrefab.transform, new Vector3((float)271, (float)-205, 0), Quaternion.identity);
                 Global.canonAngleMin = -10;
                 Global.canonAngleMax = 90;
                 break;
@@ -199,36 +200,24 @@ public class GestionLevel : MonoBehaviour
                 Instantiate(grueOnPrefab.transform, new Vector3((float)-227, (float)-119, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)-132.7, (float)-5.5, 0), Quaternion.Euler(new Vector3(0, 0, 90)));
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)174, (float)-188, 0), Quaternion.identity);
-                Instantiate(canonPrefab.transform, new Vector3((float)-500, (float)-236.6, 0), Quaternion.identity);
-                Instantiate(poubellePrefab.transform, new Vector3((float)271, (float)-237, 0), Quaternion.identity);
+                Instantiate(canonPrefab.transform, new Vector3((float)-460, (float)-238, 0), Quaternion.identity);
+                Instantiate(poubellePrefab.transform, new Vector3((float)271, (float)-205, 0), Quaternion.identity);
                 Global.canonAngleMin = -10;
                 Global.canonAngleMax = 90;
                 break;
                 //Niveau Thomas 1:
             case 8:
-                Instantiate(piecePrefab.transform, new Vector3((float)-37, (float)24, 0), Quaternion.identity);
-                Instantiate(piecePrefab.transform, new Vector3((float)60, (float)-193, 0), Quaternion.identity);
-                Instantiate(piecePrefab.transform, new Vector3((float)0, (float)-171, 0), Quaternion.identity);
-                Instantiate(grueOnPrefab.transform, new Vector3((float)-227, (float)-119, 0), Quaternion.identity);
-                Instantiate(grue2OnPrefab.transform, new Vector3((float)-132.7, (float)-5.5, 0), Quaternion.Euler(new Vector3(0, 0, 90)));
-                Instantiate(grue2OnPrefab.transform, new Vector3((float)174, (float)-188, 0), Quaternion.identity);
-                Instantiate(canonPrefab.transform, new Vector3((float)-500, (float)-236.6, 0), Quaternion.identity);
-                Instantiate(poubellePrefab.transform, new Vector3((float)-6, (float)-237, 0), Quaternion.identity);
-                Global.canonAngleMin = -10;
-                Global.canonAngleMax = 90;
-                break;
-            //Niveau Thomas 2:
-            case 9:
                 Instantiate(piecePrefab.transform, new Vector3((float)-135, (float)141, 0), Quaternion.identity);
                 Instantiate(piecePrefab.transform, new Vector3((float)141, (float)-81, 0), Quaternion.identity);
                 Instantiate(piecePrefab.transform, new Vector3((float)0, (float)-174, 0), Quaternion.identity);
-                Instantiate(grue2OnPrefab.transform, new Vector3((float)-270, (float)-190, 0),Quaternion.Euler(new Vector3(0, 0, -11)));
+                Instantiate(grue2OnPrefab.transform, new Vector3((float)-270, (float)-190, 0), Quaternion.Euler(new Vector3(0, 0, -11)));
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)-234, (float)-56, 0), Quaternion.Euler(new Vector3(0, 0, -11)));
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)-147, (float)32, 0), Quaternion.Euler(new Vector3(0, 0, 86)));
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)-83, (float)-62, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)-70, (float)-193, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)143, (float)-191, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)318, (float)30, 0), Quaternion.identity);
+<<<<<<< HEAD
                 Instantiate(canonPrefab.transform, new Vector3((float)-500, (float)-237, 0), Quaternion.identity);
                 Instantiate(poubellePrefab.transform, new Vector3((float)-6, (float)-237, 0), Quaternion.identity);
                 Global.canonAngleMin = -10;
@@ -256,9 +245,16 @@ public class GestionLevel : MonoBehaviour
                 Global.canonAngleMax = 90;
                 break;
 
+=======
+                Instantiate(canonPrefab.transform, new Vector3((float)-460, (float)-238, 0), Quaternion.identity);
+                Instantiate(poubellePrefab.transform, new Vector3((float)-6, (float)-205, 0), Quaternion.identity);
+                Global.canonAngleMin = -10;
+                Global.canonAngleMax = 90;
+                break;
+            //Niveau Thomas 2:
+>>>>>>> ced37dd17d83ceab3c2c2cf01fadf9a221796f0d
             default:
                 break;
         }
     }
-
 }
