@@ -217,7 +217,7 @@ public class GestionLevel : MonoBehaviour
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)-70, (float)-193, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)143, (float)-191, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)318, (float)30, 0), Quaternion.identity);
-<<<<<<< HEAD
+
                 Instantiate(canonPrefab.transform, new Vector3((float)-500, (float)-237, 0), Quaternion.identity);
                 Instantiate(poubellePrefab.transform, new Vector3((float)-6, (float)-237, 0), Quaternion.identity);
                 Global.canonAngleMin = -10;
@@ -236,23 +236,22 @@ public class GestionLevel : MonoBehaviour
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)143, (float)-191, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)318, (float)-191, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)318, (float)-55, 0), Quaternion.identity);
-                Instantiate(canonPrefab.transform, new Vector3((float)-500, (float)-237, 0), Quaternion.identity);
+              // Instantiate(canonPrefab.transform, new Vector3((float)-500, (float)-237, 0), Quaternion.identity);
                 // impossible d'afficher à l'écran mon objet "basket"!! 
                 //  Instantiate(basketPrefab.transform, new Vector3((float)255, (float)-60, 0), Quaternion.identity);
                 // je laisse pour le moment la corbeille - TODO : basket à la place de corbeille
-                Instantiate(poubellePrefab.transform, new Vector3((float)255, (float)-60, 0), Quaternion.identity);
+                //Instantiate(poubellePrefab.transform, new Vector3((float)255, (float)-60, 0), Quaternion.identity);
                 Global.canonAngleMin = -10;
                 Global.canonAngleMax = 90;
+                Instantiate(canonPrefab.transform, new Vector3((float)-460, (float)-238, 0), Quaternion.identity);
+               Instantiate(poubellePrefab.transform, new Vector3((float)-6, (float)-205, 0), Quaternion.identity);
+             
                 break;
 
-=======
-                Instantiate(canonPrefab.transform, new Vector3((float)-460, (float)-238, 0), Quaternion.identity);
-                Instantiate(poubellePrefab.transform, new Vector3((float)-6, (float)-205, 0), Quaternion.identity);
-                Global.canonAngleMin = -10;
-                Global.canonAngleMax = 90;
-                break;
+            
+              
             //Niveau Thomas 2:
->>>>>>> ced37dd17d83ceab3c2c2cf01fadf9a221796f0d
+//>>>>>>> ced37dd17d83ceab3c2c2cf01fadf9a221796f0d
             default:
                 break;
         }
