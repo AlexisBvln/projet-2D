@@ -237,7 +237,7 @@ public class GestionLevel : MonoBehaviour
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)318, (float)-191, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)318, (float)-55, 0), Quaternion.identity);
                 // impossible d'afficher à l'écran mon objet "basket"!! 
-                //  Instantiate(basketPrefab.transform, new Vector3((float)255, (float)-60, 0), Quaternion.identity);
+                Instantiate(basketPrefab.transform, new Vector3((float)255, (float)-60, 0), Quaternion.identity);
                 // je laisse pour le moment la corbeille - TODO : basket à la place de corbeille
                 Global.canonAngleMin = -10;
                 Global.canonAngleMax = 90;
