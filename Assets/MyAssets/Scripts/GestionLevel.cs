@@ -224,6 +224,7 @@ public class GestionLevel : MonoBehaviour
                 Global.canonAngleMax = 90;
                 break;
             //Niveau Thomas 3:
+            //Niveau Thomas 2:
             case 09:
                 Instantiate(piecePrefab.transform, new Vector3((float)-135, (float)141, 0), Quaternion.identity);
                 Instantiate(piecePrefab.transform, new Vector3((float)141, (float)-81, 0), Quaternion.identity);

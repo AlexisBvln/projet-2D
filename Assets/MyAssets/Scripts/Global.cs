@@ -14,4 +14,5 @@ public static class Global : object {
 	public static float canonAngleMax = 90; // LEFT:180:-180, TOP:90, RIGHT:0, BOTTOM:-90
 	public static int langueKey = 0; // Clé de la langue : [0 = fr], [1 = en]
 	public static int[] listeTetatives = new int[nombreLevel + 1]; // nombre de tentatives par niveau
+    public static bool IsWrongWay = false;
 }

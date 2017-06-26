@@ -19,7 +19,28 @@ public class Basket : MonoBehaviour {
             else {
                 Global.isWin = false;
                 GestionLevel.affichePanelScore();
+
+        if (!Global.IsWrongWay)
+        {
+            if (col.gameObject.tag.Equals(Constantes.BALL_TAG) && !Global.isWin)
+            {
+                if (Global.point == 3)
+                {
+                    Global.isWin = true;
+                    GestionLevel.SaveLevel(Global.levelActive, Global.point);
+                }
+                else if (Global.point > 0)
+                {
+                    Global.isWin = false;
+                    GestionLevel.SaveLevel(Global.levelActive, Global.point);
+                }
+                else
+                {
+                    Global.isWin = false;
+                    GestionLevel.affichePanelScore();
+                }
             }
         }
+
     }
 }

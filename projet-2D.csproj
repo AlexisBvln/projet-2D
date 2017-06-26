@@ -94,6 +94,7 @@
     <Compile Include="Assets\MyAssets\Scripts\Poubelle.cs" />
     <Compile Include="Assets\MyAssets\Scripts\Prediction.cs" />
     <Compile Include="Assets\MyAssets\Scripts\Preshot.cs" />
+    <Compile Include="Assets\MyAssets\Scripts\TrigerBas.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
