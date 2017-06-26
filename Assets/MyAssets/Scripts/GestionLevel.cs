@@ -240,6 +240,7 @@ public class GestionLevel : MonoBehaviour
                 // impossible d'afficher à l'écran mon objet "basket"!! 
                 Instantiate(basketPrefab.transform, new Vector3((float)255, (float)-60, 0), Quaternion.identity);
                 // je laisse pour le moment la corbeille - TODO : basket à la place de corbeille
+                Instantiate(canonPrefab.transform, new Vector3((float)-460, (float)-238, 0), Quaternion.identity);
                 Global.canonAngleMin = -10;
                 Global.canonAngleMax = 90;
                 Instantiate(canonPrefab.transform, new Vector3((float)-460, (float)-238, 0), Quaternion.identity);
