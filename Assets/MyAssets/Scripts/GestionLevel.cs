@@ -235,7 +235,7 @@ public class GestionLevel : MonoBehaviour
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)143, (float)-191, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)318, (float)-191, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)318, (float)-55, 0), Quaternion.identity);
-                Instantiate(basketPrefab.transform, new Vector3((float)255, (float)-60, 0), Quaternion.identity);
+                Instantiate(basketPrefab.transform, new Vector3((float)231, (float)-60, 0), Quaternion.identity);
                 Instantiate(canonPrefab.transform, new Vector3((float)-460, (float)-238, 0), Quaternion.identity);
                 Global.canonAngleMin = -10;
                 Global.canonAngleMax = 90;
