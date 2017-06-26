@@ -217,13 +217,12 @@ public class GestionLevel : MonoBehaviour
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)-70, (float)-193, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)143, (float)-191, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)318, (float)30, 0), Quaternion.identity);
-
                 Instantiate(canonPrefab.transform, new Vector3((float)-500, (float)-237, 0), Quaternion.identity);
                 Instantiate(poubellePrefab.transform, new Vector3((float)-6, (float)-205, 0), Quaternion.identity);
                 Global.canonAngleMin = -10;
                 Global.canonAngleMax = 90;
                 break;
-            //Niveau Thomas 3:
+            //Niveau Thomas 2:
             case 09:
                 Instantiate(piecePrefab.transform, new Vector3((float)-135, (float)141, 0), Quaternion.identity);
                 Instantiate(piecePrefab.transform, new Vector3((float)141, (float)-81, 0), Quaternion.identity);
@@ -236,13 +235,10 @@ public class GestionLevel : MonoBehaviour
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)143, (float)-191, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)318, (float)-191, 0), Quaternion.identity);
                 Instantiate(grue2OnPrefab.transform, new Vector3((float)318, (float)-55, 0), Quaternion.identity);
-                // impossible d'afficher à l'écran mon objet "basket"!! 
                 Instantiate(basketPrefab.transform, new Vector3((float)255, (float)-60, 0), Quaternion.identity);
-                // je laisse pour le moment la corbeille - TODO : basket à la place de corbeille
+                Instantiate(canonPrefab.transform, new Vector3((float)-460, (float)-238, 0), Quaternion.identity);
                 Global.canonAngleMin = -10;
                 Global.canonAngleMax = 90;
-                Instantiate(canonPrefab.transform, new Vector3((float)-460, (float)-238, 0), Quaternion.identity);
-               Instantiate(poubellePrefab.transform, new Vector3((float)-6, (float)-205, 0), Quaternion.identity);
                 break;
                 
             default:
